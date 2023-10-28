@@ -77,7 +77,7 @@ namespace BlazorChat.Client.Pages
                 await LoadUserChat(ContactId);
             }
         }
-        public List<ApplicationUser> ChatUsers = new List<ApplicationUser>();
+        public List<ApplicationUser> ChatUsers = new();
         [Parameter] public string ContactEmail { get; set; }
         [Parameter] public string ContactId { get; set; }
         async Task LoadUserChat(string userId)
